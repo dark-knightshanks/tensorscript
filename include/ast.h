@@ -7,6 +7,7 @@
 namespace tensorscript {
     struct ExprAST{
         virtual ~ExprAST() = default;
+        std::vector<int64_t> inferredShape;
     };
     struct StmtAST{
         virtual ~StmtAST() = default;
